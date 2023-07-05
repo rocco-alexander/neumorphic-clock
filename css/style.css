@@ -1,0 +1,99 @@
+:root{
+    --light: #ececec
+
+}
+
+body{
+    background: #ececec;
+    overflow: hidden;
+}
+.clock-container{
+    width: 100%;
+    position: absolute;
+    top: calc(50vh - 250px);
+    margin: 0 auto;
+}
+.clock{
+    margin:  0 auto;
+    background: #ececec;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    box-shadow:  10px 10px 15px #70707015,
+    -10px -10px 15px #ffffff50, inset -10px -10px 10px #ececec,  inset -10px -10px 10px #AEAEC025, inset 10px 10px 10px #fff;
+}
+
+.second-hand{
+     background: #ececec;
+     width: 10px;
+     height: 200px;
+     position: absolute;
+     transform-origin: bottom center;
+     left: 50%;
+     bottom: 50%;
+     border-radius: 5px;
+    box-shadow:  10px 10px 15px #70707015,
+    -10px -10px 15px #ffffff50, inset -10px -10px 10px #ececec,  inset -10px -10px 10px #AEAEC025, inset 10px 10px 10px #fff;
+}
+
+.minute-hand{
+    background: #ececec;
+    width: 10px;
+    height: 150px;
+    position: absolute;
+    transform-origin: bottom center;
+    left: 50%;
+    bottom: 50%;
+    border-radius: 5px;
+    box-shadow:  10px 10px 15px #70707015,
+    -10px -10px 15px #ffffff50, inset -10px -10px 10px #ececec,  inset -10px -10px 10px #AEAEC025, inset 10px 10px 10px #fff;
+}
+
+.hour-hand{
+    background: #ededed;
+    width: 10px;
+    height: 100px;
+    position: absolute;
+    transform-origin: bottom center;
+    left: 50%;
+    bottom: 50%;
+    border-radius: 5px;
+    box-shadow:  10px 10px 15px #70707015,
+    -10px -10px 15px #ffffff50, inset -10px -10px 10px #ececec,  inset -10px -10px 10px #AEAEC025, inset 10px 10px 10px #fff;
+}
+
+.circle{
+    background: #ececec;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: calc(50% - 15px);
+    bottom: calc(50% - 15px);
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow:  10px 10px 15px #70707015,
+    -10px -10px 15px #ffffff50;
+}
+/*.second-hand.a{*/
+/*    -webkit-animation: rte 60s infinite linear;*/
+/*    -o-animation: rte 60s infinite linear;*/
+/*    animation: rte 60s infinite linear;*/
+/*}*/
+
+/*@keyframes rte {*/
+/*    0%{*/
+/*        box-shadow:  -3px -3px 5px #70707020, 3px 3px 5px #ffffff50;*/
+/*    }*/
+/*    25% {*/
+/*        box-shadow:  3px -3px 5px #70707020, -3px 3px 5px #ffffff50;*/
+/*    }*/
+/*    50% {*/
+/*        box-shadow:  3px -3px 5px #70707020, -3px 3px 5px #ffffff50;*/
+/*    }*/
+/*    75% {*/
+/*        box-shadow:  3px -3px 5px #70707020, -3px 3px 5px #ffffff50;*/
+/*    }*/
+/*    100% {*/
+/*        box-shadow:  3px 3px 5px #70707020, -3px -3px 5px #ffffff50;*/
+/*    }*/
+/*}*/
