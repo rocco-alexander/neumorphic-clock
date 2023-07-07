@@ -1,6 +1,5 @@
 :root{
-    --light: #ececec
-
+    --light: #ececec;
 }
 
 body{
@@ -19,8 +18,8 @@ body{
     width: 500px;
     height: 500px;
     border-radius: 50%;
-    box-shadow:  10px 10px 15px #70707015,
-    -10px -10px 15px #ffffff50, inset -10px -10px 10px #ececec,  inset -10px -10px 10px #AEAEC025, inset 10px 10px 10px #fff;
+    box-shadow:  10px 10px 15px #70707025,
+    -10px -10px 15px #ffffff50, inset -10px -10px 10px #AEAEC025, inset 10px 10px 10px #fff;
 }
 
 .second-hand{
@@ -31,9 +30,10 @@ body{
      transform-origin: bottom center;
      left: 50%;
      bottom: 50%;
+    transform: translate(-50%, -50%);
      border-radius: 5px;
-    box-shadow:  10px 10px 15px #70707015,
-    -10px -10px 15px #ffffff50, inset -10px -10px 10px #ececec,  inset -10px -10px 10px #AEAEC025, inset 10px 10px 10px #fff;
+    box-shadow:  10px 10px 15px #70707020,
+    -10px -10px 15px #ffffff50, inset -2px -2px 2px #AEAEC025, inset 2px 2px 2px #fff;
 }
 
 .minute-hand{
@@ -44,9 +44,10 @@ body{
     transform-origin: bottom center;
     left: 50%;
     bottom: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 5px;
-    box-shadow:  10px 10px 15px #70707015,
-    -10px -10px 15px #ffffff50, inset -10px -10px 10px #ececec,  inset -10px -10px 10px #AEAEC025, inset 10px 10px 10px #fff;
+    box-shadow:  10px 10px 15px #70707020,
+    -10px -10px 15px #ffffff50, inset -2px -2px 2px #AEAEC025, inset 2px 2px 2px #fff;
 }
 
 .hour-hand{
@@ -57,9 +58,10 @@ body{
     transform-origin: bottom center;
     left: 50%;
     bottom: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 5px;
-    box-shadow:  10px 10px 15px #70707015,
-    -10px -10px 15px #ffffff50, inset -10px -10px 10px #ececec,  inset -10px -10px 10px #AEAEC025, inset 10px 10px 10px #fff;
+    box-shadow:  10px 10px 15px #70707020,
+    -10px -10px 15px #ffffff50, inset -2px -2px 2px #AEAEC025, inset 2px 2px 2px #fff;
 }
 
 .circle{
@@ -71,29 +73,59 @@ body{
     bottom: calc(50% - 15px);
     border-radius: 50%;
     z-index: 1;
-    box-shadow:  10px 10px 15px #70707015,
-    -10px -10px 15px #ffffff50;
+    box-shadow:  10px 10px 15px #70707025,
+    -10px -10px 15px #ffffff50, inset -10px -10px 10px #AEAEC025, inset 10px 10px 10px #fff;
 }
+
+.text-time-container{
+    position: absolute;
+    display: flex;
+    left: 50%;
+    bottom:70%;
+    transform: translate(-50%, -70%);
+    line-height: 0;
+}
+.text-time-container p{
+    font-size: 4rem;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color:#ececec ;
+    text-shadow:  5px 5px 10px #70707080,
+    -5px -5px 10px #ffffff;
+}
+.animate{
+    animation: rte 1s alternate infinite;
+}
+
+@keyframes rte {
+    from{
+        text-shadow:  5px 5px 10px #70707080, -5px -5px 10px #ffffff;
+    }
+    to{
+        text-shadow: none;
+    }
+}
+
 /*.second-hand.a{*/
-/*    -webkit-animation: rte 60s infinite linear;*/
-/*    -o-animation: rte 60s infinite linear;*/
-/*    animation: rte 60s infinite linear;*/
+/*    -webkit-animation: rte 1s infinite linear alternate;*/
+/*    -o-animation: rte 1s infinite linear alternate;*/
+/*    animation: rte 1s infinite linear alternate;*/
 /*}*/
 
 /*@keyframes rte {*/
 /*    0%{*/
-/*        box-shadow:  -3px -3px 5px #70707020, 3px 3px 5px #ffffff50;*/
+/*        box-shadow:  -3px -3px 5px #707070, 3px 3px 5px #ffffff;*/
 /*    }*/
 /*    25% {*/
-/*        box-shadow:  3px -3px 5px #70707020, -3px 3px 5px #ffffff50;*/
+/*        box-shadow:  3px -3px 5px #707070, -3px 3px 5px #ffffff;*/
 /*    }*/
 /*    50% {*/
-/*        box-shadow:  3px -3px 5px #70707020, -3px 3px 5px #ffffff50;*/
+/*        box-shadow:  3px -3px 5px #707070, 3px -3px 5px #ffffff;*/
 /*    }*/
 /*    75% {*/
-/*        box-shadow:  3px -3px 5px #70707020, -3px 3px 5px #ffffff50;*/
+/*        box-shadow:  3px -3px 5px #707070, 3px -3px 5px #ffffff;*/
 /*    }*/
 /*    100% {*/
-/*        box-shadow:  3px 3px 5px #70707020, -3px -3px 5px #ffffff50;*/
+/*        box-shadow:  3px 3px 5px #707070, -3px -3px 5px #ffffff;*/
 /*    }*/
 /*}*/
