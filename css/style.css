@@ -73,8 +73,8 @@ body{
     bottom: calc(50% - 15px);
     border-radius: 50%;
     z-index: 1;
-    box-shadow:  10px 10px 15px #70707025,
-    -10px -10px 15px #ffffff50, inset -10px -10px 10px #AEAEC025, inset 10px 10px 10px #fff;
+    box-shadow:  5px 5px 7px #70707025,
+    -5px -5px 7px #ffffff50, inset -3px -3px 3px #AEAEC025, inset 3px 3px 3px #fff;
 }
 
 .text-time-container{

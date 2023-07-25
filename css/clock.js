@@ -7,7 +7,7 @@ const setTime = (setting) =>{
         const time = document.getElementById('time-text-minute');
         time.classList.add('animate');
         setTimeout(()=>{
-            time.innerHTML = new Date().getMinutes();
+            time.innerHTML = new Date().getMinutes().toString().padStart(2,'0');
         },1500);
         setTimeout(()=>{
             time.classList.remove('animate');
@@ -19,7 +19,7 @@ const setTime = (setting) =>{
         minute.classList.add('animate');
         hour.classList.add('animate');
         setTimeout(() => {
-            minute.innerHTML = new Date().getMinutes();
+            minute.innerHTML = new Date().getMinutes().toString().padStart(2,'0');
             hour.innerHTML = new Date().getHours();
         }, 1500);
         setTimeout(() => {
@@ -45,16 +45,16 @@ const setDate = () =>{
     minute.style.transform = `rotate(${minuteDegree}deg)`;
     hour.style.transform = `rotate(${hourDegree}deg)`;
 
-    if(seconds > 58 ){
-        setTime('minute')
-    }
-    else if(minuteDegree === 360){
+    if(seconds > 58 && minutes >= 59){
         setTime('hour')
+    }
+    else if(seconds > 58 ){
+        setTime('minute')
     }
 
     requestAnimationFrame(setDate);
 };
-document.getElementById('time-text-minute').innerHTML = new Date().getMinutes();
+document.getElementById('time-text-minute').innerHTML = new Date().getMinutes().toString().padStart(2,'0');
 document.getElementById('time-text-hour').innerHTML = new Date().getHours();
 setDate();
 
